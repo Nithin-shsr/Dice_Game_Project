@@ -16,8 +16,7 @@ A fast-paced, two-player dice game built with **HTML**, **CSS**, and **JavaScrip
 ---
 
 ## 📸 Preview
-
-![Dice Duel Screenshot](images/dice-preview.png)  
+<img src = "./Dice Game-Preview"> 
 <sub>*Note: Replace with your actual screenshot or GIF*</sub>
 
 ---
