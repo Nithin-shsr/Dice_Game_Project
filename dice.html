@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <title>🎲 Clash of Dice</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./style.css">
+        
+    </head>
+    <body>
+        <div class = "container text-center">
+            <h1 class="mb-4">🎲Welcome to Clash of Dice</h1>
+            <h2 id="result-message" class="mb-3">Click <span style="color: #ff3366;">"Start Match"</span> to roll the dice</h2>
+            <div class="name-box">
+                <div class="name-row">
+                    <label for="formGroupExampleInput" class="form-label">Player 1's Name :</label>
+                    <input type="text" id="formGroupExampleInput" placeholder="Player 1 Name">
+                    <label for="formGroupExampleInput" class="form-label">Player 2's Name :</label>
+                    <input type="text" id="formGroupExampleInput2" placeholder="Player 2 Name">
+                    <button type="button" class="enter-btn" onclick="lockNames()">Enter</button>
+                </div>
+            </div>
+
+            <div class = "opt">
+                <div class = "dice-row">
+           <div class="card" style="width: 18rem;">
+                <img src="./images/dice1.png" class="card-img-top" id="dice1">
+                <div class="card-body">
+                     <h2 class="player-label" id="player1">Player 1</h2>               
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./images/dice2.png" class="card-img-top" id="dice2">
+                <div class="card-body">
+                     <h2 class="player-label" id="player2">Player 2</h2>               
+                </div>
+                </div>
+            </div>
+                <button type="button" class="start-btn" onclick="startMatch()">🎲 Start Match</button>
+  
+        </div>
+        </div>
+        <script src="index.js" charset="utf-8"></script> 
+    </body>
+</html>
