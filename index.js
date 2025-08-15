@@ -27,19 +27,25 @@ document.getElementById("player1").textContent = player1Name;
 document.getElementById("player2").textContent = player2Name;
 
 const result = document.getElementById("result-message");
+result.classList.remove("player1-Win", "player2-Win", "draw", "result-animate");
+
 if(randNumber1 > randNumber2)
 {
     result.textContent = "🎉 "+ player1Name +" Wins!";
+    result.classList.add("player1-Win", "result-animate");
+
 }
 else if(randNumber2 > randNumber1)
 {
     result.textContent = "🎉 "+player2Name+" Wins!";
+    result.classList.add("player2-Win", "result-animate");
+
 }
 
 else{
     result.textContent = "🤝 It's a Draw!";
+    result.classList.add("draw", "result-animate");
 }
-
 setTimeout(() => {
     img1.classList.remove("animate");
     img2.classList.remove("animate");
@@ -55,3 +61,4 @@ function lockNames() {
   document.getElementById("player1").textContent = player1Name || "Player 1";
   document.getElementById("player2").textContent = player2Name || "Player 2";
 }
+
