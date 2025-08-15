@@ -16,7 +16,7 @@ A fast-paced, two-player dice game built with **HTML**, **CSS**, and **JavaScrip
 ---
 
 ## 📸 Preview
-<img src="Dice Game-Preview.png" alt="Dice Game Preview" width="400">> 
+<img src="Dice Game-Preview.png" alt="Dice Game Preview" width="500">
 
 ---
 
